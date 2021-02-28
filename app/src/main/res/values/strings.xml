@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Adopt A Pup</string>
+    <string name="title_activity_puppy_detail">PuppyDetailActivity</string>
 </resources>

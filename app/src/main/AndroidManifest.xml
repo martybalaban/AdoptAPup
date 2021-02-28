@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdoptAPup">
         <activity
+            android:name=".PuppyDetailActivity"
+            android:exported="true"
+            android:label="@string/title_activity_puppy_detail"
+            android:theme="@style/Theme.AdoptAPup.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
