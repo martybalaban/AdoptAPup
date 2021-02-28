@@ -19,44 +19,44 @@ object PuppyRepo {
 
 private val puppiesList = listOf(
     Puppy(
-        R.drawable.header,
+        R.drawable.puppy1,
         "Rex",
         listOf("Male", "Loves to hunt rabbits", "Enjoys nature"),
         puppyID = 0
     ),
     Puppy(
-        R.drawable.ic_launcher_foreground,
+        R.drawable.puppy2,
         "Sparky",
         listOf("Male", "Energetic", "Really smart"),
         puppyID = 1
     ),
     Puppy(
-        R.drawable.ic_launcher_foreground,
+        R.drawable.puppy3,
         "Fido",
         listOf("Female", "Best with kids", "Energetic", "Love going on walks"),
         puppyID = 2
     )
     ,
     Puppy(
-        R.drawable.ic_launcher_foreground,
+        R.drawable.puppy4,
         "Lassy",
         listOf("Male", "Likes other dogs", "Afraid of cats", "Love chasing squirrels"),
         puppyID = 3
     ),
     Puppy(
-        R.drawable.ic_launcher_foreground,
-        "Beethoven",
+        R.drawable.puppy5,
+        "Betty",
         listOf("Male", "Afraid of cats", "Love to snuggle"),
         puppyID = 4
     ),
     Puppy(
-        R.drawable.puppy1,
+        R.drawable.puppy6,
         "Mozart",
         listOf("Female", "Family dog", "Energetic", "Likes belly rubs"),
         puppyID = 5
     ),
     Puppy(
-        R.drawable.puppy1,
+        R.drawable.puppy7,
         "Spike",
         listOf("Female", "Needs quiet home", "Afraid of cats", "Knows 10 tricks"),
         puppyID = 6

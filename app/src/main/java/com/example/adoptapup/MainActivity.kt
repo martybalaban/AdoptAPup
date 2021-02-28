@@ -32,13 +32,10 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContent {
             PuppyApp(backDispatcher = onBackPressedDispatcher)
         }
     }
-
 }

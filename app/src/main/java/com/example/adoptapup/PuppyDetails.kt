@@ -16,12 +16,18 @@
 
 package com.example.adoptapup
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
+import androidx.compose.material.Shapes
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 
@@ -35,21 +41,34 @@ fun PuppyDetailCard(
     upPress: () -> Unit) {
     val puppy = PuppyRepo.getPuppy(puppyID)
     Column() {
-
+        Image(
+            painter = painterResource(puppy.imageResource),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(180.dp)
+                .clip(shape = RoundedCornerShape(4.dp)),
+            contentScale = ContentScale.Fit
+        )
         Text(
             puppy.name,
-            modifier = Modifier.padding(8.dp, 0.dp, 8.dp, 0.dp),
+            modifier = Modifier.padding(8.dp, 10.dp, 8.dp, 0.dp),
             style = TextStyle.Default
         )
 
+        Spacer(modifier = Modifier.height(5.dp))
+
         for (attribute in puppy.attributes) {
             Text(
-                "* $attribute\n",
+                "· $attribute\n",
                 modifier = Modifier.padding(16.dp, 0.dp, 16.dp, 0.dp)
             )
         }
 
-        Button(onClick = { /*TODO*/ },) {
+        Button(onClick = { /*TODO*/ },
+            Modifier
+                .fillMaxWidth()
+                .padding(10.dp),) {
             Text(text = "Adopt Me")
         }
     }

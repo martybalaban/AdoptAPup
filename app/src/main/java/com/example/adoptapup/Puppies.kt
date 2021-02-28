@@ -65,7 +65,7 @@ fun PuppyCard(puppy: Puppy, selectCourse: (Long) -> Unit) {
             }
             .fillMaxWidth()) {
             Image(
-                painter = painterResource(R.drawable.ic_baseline_pets_24),
+                painter = painterResource(puppy.imageResource),
                 contentDescription = null,
                 modifier = Modifier
                     .width(180.dp)
